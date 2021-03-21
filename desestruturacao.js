@@ -18,15 +18,15 @@ let listaCompras = ['pão', 'carne', 'frutas', 'leite'];
 
 let [item1, item2, item5, item456, itemx] = listaCompras;
 
-console.log(item5)
+console.log(item5) //frutas
 
 //EXERCICIO
 
 let destinosIncriveis = ['Marruecos', 'Bariloche', 'Barcelona', 'China', 'Grecia']
 
-var [ , bariloche, , china] = destinosIncriveis
+var [ ,pais2, , pais4] = destinosIncriveis;
 
-var bariloche2 = destinosIncriveis.bariloche;
-var china2 = destinosIncriveis.china;
+var bariloche = pais2;
+var china = pais4;
 
-console.log(bariloche2, china2)
+console.log(bariloche);
