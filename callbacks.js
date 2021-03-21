@@ -71,14 +71,18 @@ console.log(calculadora2(30, 2, soma));
 const sites = ['site1.com','site2.com','site3.com']
 
 function adicionarHttp(url) {
-  return "http://"
+  return "http://" + url
 }
 
-function processar(sites, callback){
-  return callback(url, sites)
+function processar(lista, callback){
+  var sitesComUrl = [];
+  for(var i=0;i<lista.length;i++){
+    sitesComUrl.push(callback(lista[i]));
+  }
+  return sitesComUrl;
 }
 
-console.log(processar())
+console.log(processar(sites, adicionarHttp))
 
 /*const alunos = [
     { nome: "Ana", notas: [10, 3, 4, 7, 5] },
