@@ -24,9 +24,6 @@ console.log(item5) //frutas
 
 let destinosIncriveis = ['Marruecos', 'Bariloche', 'Barcelona', 'China', 'Grecia']
 
-var [ ,pais2, , pais4] = destinosIncriveis;
-
-var bariloche = pais2;
-var china = pais4;
+var [marruecos, bariloche, barcelona, china, grecia] = destinosIncriveis;
 
 console.log(bariloche);
